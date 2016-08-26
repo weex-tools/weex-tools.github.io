@@ -124,14 +124,14 @@
       <ul class="post-list">
   
     <li class="post-list-item">
-        <article id="post-number"
+        <article id="post-module"
   class="article article-type-post" itemprop="blogPost">
      
 
 
   
     <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2016/08/27/number/">数值的扩展</a>
+      <a class="post-title-link" href="/2016/08/27/module/">Module</a>
     </h3>
   
 
@@ -151,54 +151,10 @@
 
     <div class="post-content" id="post-content" itemprop="postContent" >
     
-           二进制和八进制表示法  ES6提供了二进制和八进制数值的新的写法，分别用前缀 0b （或 0B ）和 0o （或 0O ）表示。 
-      1  2       0b111110111  ===  503   // true    0o767  ===  503   // true       
- 从ES5开始，在严格模式之中，八进制就不再允许使用前缀 0 表示，ES6进一步明确，要使用
+         ES6的Class只是面向对象编程的语法糖，升级了ES5的构造函数的原型链继承的写法，并没有解决模块化问题。Module功能就是为了解决这个问题而提出的。 
+ 历史上，JavaScript一直没有模块（module）体系，无法将一个大程序拆分成互相依赖的小文件，再用简单的方法拼装起来。其他语言都有这项功能，比如Ruby的 require 、Python的 import ，甚至就连CSS都有 @i
     
-        <a href="/2016/08/27/number/" class="post-more waves-effect waves-button">
-            阅读全文...
-        </a>
-    </div>
-    
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/es6/">es6</a></li></ul>
-
-</article>
-
-    </li>
-  
-    <li class="post-list-item">
-        <article id="post-array"
-  class="article article-type-post" itemprop="blogPost">
-     
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2016/08/27/array/">数组的扩展</a>
-    </h3>
-  
-
-
-
-    <div class="post-meta">
-        <time datetime="2016-08-26T17:31:00.000Z" itemprop="datePublished" class="post-time">
-  2016-08-27
-</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/es6/">es6</a></li></ul>
-
-
-
-    </div>
-
-    <div class="post-content" id="post-content" itemprop="postContent" >
-    
-           Array.from()   Array.from 方法用于将两类对象转为真正的数组：类似数组的对象（array-like object）和可遍历（iterable）的对象（包括ES6新增的数据结构Set和Map）。 
- 下面是一个类似数组的对象， Array.from 将它转为真正的数组。 
-      1  2  3  4  5  6  7  8  9  10  11  12      
-    
-        <a href="/2016/08/27/array/" class="post-more waves-effect waves-button">
+        <a href="/2016/08/27/module/" class="post-more waves-effect waves-button">
             阅读全文...
         </a>
     </div>
@@ -295,51 +251,6 @@
     </li>
   
     <li class="post-list-item">
-        <article id="post-destructuring"
-  class="article article-type-post" itemprop="blogPost">
-     
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2016/08/27/destructuring/">变量的解构赋值</a>
-    </h3>
-  
-
-
-
-    <div class="post-meta">
-        <time datetime="2016-08-26T17:31:00.000Z" itemprop="datePublished" class="post-time">
-  2016-08-27
-</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/es6/">es6</a></li></ul>
-
-
-
-    </div>
-
-    <div class="post-content" id="post-content" itemprop="postContent" >
-    
-           数组的解构赋值    基本用法  ES6允许按照一定模式，从数组和对象中提取值，对变量进行赋值，这被称为解构（Destructuring）。 
- 以前，为变量赋值，只能直接指定值。 
-      1  2  3       var  a =  1 ;   var  b =  2 ;   var  c =  3 ;      
- ES6允许写成下面这样。 
-      1       var 
-    
-        <a href="/2016/08/27/destructuring/" class="post-more waves-effect waves-button">
-            阅读全文...
-        </a>
-    </div>
-    
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/es6/">es6</a></li></ul>
-
-</article>
-
-    </li>
-  
-    <li class="post-list-item">
         <article id="post-fp"
   class="article article-type-post" itemprop="blogPost">
      
@@ -425,14 +336,14 @@
     </li>
   
     <li class="post-list-item">
-        <article id="post-intro"
+        <article id="post-destructuring"
   class="article article-type-post" itemprop="blogPost">
      
 
 
   
     <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2016/08/27/intro/">ECMAScript 6简介</a>
+      <a class="post-title-link" href="/2016/08/27/destructuring/">变量的解构赋值</a>
     </h3>
   
 
@@ -452,11 +363,105 @@
 
     <div class="post-content" id="post-content" itemprop="postContent" >
     
-         ECMAScript 6.0（以下简称ES6）是JavaScript语言的下一代标准，已经在2015年6月正式发布了。它的目标，是使得JavaScript语言可以用来编写复杂的大型应用程序，成为企业级开发语言。 
- 标准的制定者有计划，以后每年发布一次标准，使用年份作为版本。因为ES6的第一个版本是在2015年发布的，所以又称ECMAScript 2015（简称ES2015）。 
- 2016年6
+           数组的解构赋值    基本用法  ES6允许按照一定模式，从数组和对象中提取值，对变量进行赋值，这被称为解构（Destructuring）。 
+ 以前，为变量赋值，只能直接指定值。 
+      1  2  3       var  a =  1 ;   var  b =  2 ;   var  c =  3 ;      
+ ES6允许写成下面这样。 
+      1       var 
     
-        <a href="/2016/08/27/intro/" class="post-more waves-effect waves-button">
+        <a href="/2016/08/27/destructuring/" class="post-more waves-effect waves-button">
+            阅读全文...
+        </a>
+    </div>
+    
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/es6/">es6</a></li></ul>
+
+</article>
+
+    </li>
+  
+    <li class="post-list-item">
+        <article id="post-function"
+  class="article article-type-post" itemprop="blogPost">
+     
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2016/08/27/function/">函数的扩展</a>
+    </h3>
+  
+
+
+
+    <div class="post-meta">
+        <time datetime="2016-08-26T17:31:00.000Z" itemprop="datePublished" class="post-time">
+  2016-08-27
+</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/es6/">es6</a></li></ul>
+
+
+
+    </div>
+
+    <div class="post-content" id="post-content" itemprop="postContent" >
+    
+           函数参数的默认值    基本用法  在ES6之前，不能直接为函数的参数指定默认值，只能采用变通的方法。 
+      1  2  3  4  5  6  7  8        function   log ( x, y )  &#123;    y = y ||  'World' ;     console .log(x, y);  &#125;    log( 'Hello' )  //
+    
+        <a href="/2016/08/27/function/" class="post-more waves-effect waves-button">
+            阅读全文...
+        </a>
+    </div>
+    
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/es6/">es6</a></li></ul>
+
+</article>
+
+    </li>
+  
+    <li class="post-list-item">
+        <article id="post-async"
+  class="article article-type-post" itemprop="blogPost">
+     
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2016/08/27/async/">异步操作和Async函数</a>
+    </h3>
+  
+
+
+
+    <div class="post-meta">
+        <time datetime="2016-08-26T17:31:00.000Z" itemprop="datePublished" class="post-time">
+  2016-08-27
+</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/es6/">es6</a></li></ul>
+
+
+
+    </div>
+
+    <div class="post-content" id="post-content" itemprop="postContent" >
+    
+         异步编程对JavaScript语言太重要。Javascript语言的执行环境是“单线程”的，如果没有异步编程，根本没法用，非卡死不可。 
+ ES6诞生以前，异步编程的方法，大概有下面四种。 
+ 
+ 回调函数 
+ 事件监听 
+ 发布/订阅 
+ Promise 对象 
+ 
+ ES6将JavaScript异步编程带入了一个全新的阶段，ES7的 Async 函数更是提出了异步编程的终极解决方案。 
+  
+    
+        <a href="/2016/08/27/async/" class="post-more waves-effect waves-button">
             阅读全文...
         </a>
     </div>
@@ -511,14 +516,14 @@
     </li>
   
     <li class="post-list-item">
-        <article id="post-iterator"
+        <article id="post-intro"
   class="article article-type-post" itemprop="blogPost">
      
 
 
   
     <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2016/08/27/iterator/">Iterator和for...of循环</a>
+      <a class="post-title-link" href="/2016/08/27/intro/">ECMAScript 6简介</a>
     </h3>
   
 
@@ -538,10 +543,11 @@
 
     <div class="post-content" id="post-content" itemprop="postContent" >
     
-           Iterator（遍历器）的概念  JavaScript原有的表示“集合”的数据结构，主要是数组（Array）和对象（Object），ES6又添加了Map和Set。这样就有了四种数据集合，用户还可以组合使用它们，定义自己的数据结构，比如数组的成员是Map，Map的成员是对象。这样就需要一种统一的接口机制，来处理所有不同的数据结构。 
- 遍历器（Iterator）就是这样一种机制。它是一种接口
+         ECMAScript 6.0（以下简称ES6）是JavaScript语言的下一代标准，已经在2015年6月正式发布了。它的目标，是使得JavaScript语言可以用来编写复杂的大型应用程序，成为企业级开发语言。 
+ 标准的制定者有计划，以后每年发布一次标准，使用年份作为版本。因为ES6的第一个版本是在2015年发布的，所以又称ECMAScript 2015（简称ES2015）。 
+ 2016年6
     
-        <a href="/2016/08/27/iterator/" class="post-more waves-effect waves-button">
+        <a href="/2016/08/27/intro/" class="post-more waves-effect waves-button">
             阅读全文...
         </a>
     </div>
