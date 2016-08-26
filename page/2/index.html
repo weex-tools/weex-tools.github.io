@@ -12,7 +12,7 @@
   <meta name="keywords" content="undefined">
   <meta property="og:type" content="website">
 <meta property="og:title" content="Es6">
-<meta property="og:url" content="http://weex-tools.github.io/es6/index.html">
+<meta property="og:url" content="http://weex-tools.github.io/es6/page/2/index.html">
 <meta property="og:site_name" content="Es6">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Es6">
@@ -124,89 +124,14 @@
       <ul class="post-list">
   
     <li class="post-list-item">
-        <article id="post-symbol"
+        <article id="post-iterator"
   class="article article-type-post" itemprop="blogPost">
      
 
 
   
     <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/es6/2016/08/27/symbol/">Symbol</a>
-    </h3>
-  
-
-
-
-    <div class="post-meta">
-        <time datetime="2016-08-26T17:31:17.000Z" itemprop="datePublished" class="post-time">
-  2016-08-27
-</time>
-
-        
-
-
-    </div>
-
-    <div class="post-content" id="post-content" itemprop="postContent" >
-    
-           概述  ES5的对象属性名都是字符串，这容易造成属性名的冲突。比如，你使用了一个他人提供的对象，但又想为这个对象添加新的方法（mixin模式），新方法的名字就有可能与现有方法产生冲突。如果有一种机制，保证每个属性的名字都是独一无二的就好了，这样就从根本上防止属性名的冲突。这就是ES6引入Symbol的原因。 
- ES6引入了一种新的原始数据类型Symbol，表示独一无二的值。它是JavaSc
-    
-        <a href="/es6/2016/08/27/symbol/" class="post-more waves-effect waves-button">
-            阅读全文...
-        </a>
-    </div>
-    
-</article>
-
-    </li>
-  
-    <li class="post-list-item">
-        <article id="post-hello-world"
-  class="article article-type-post" itemprop="blogPost">
-     
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/es6/2016/08/26/hello-world/">Hello World</a>
-    </h3>
-  
-
-
-
-    <div class="post-meta">
-        <time datetime="2016-08-26T15:31:10.000Z" itemprop="datePublished" class="post-time">
-  2016-08-26
-</time>
-
-        
-
-
-    </div>
-
-    <div class="post-content" id="post-content" itemprop="postContent" >
-    
-         Welcome to  Hexo ! This is your very first post. Check  documentation  for more info. If you get any problems when using Hexo, you can find the answer in  troubleshooting  or you can ask me on  GitHu
-    
-        <a href="/es6/2016/08/26/hello-world/" class="post-more waves-effect waves-button">
-            阅读全文...
-        </a>
-    </div>
-    
-</article>
-
-    </li>
-  
-    <li class="post-list-item">
-        <article id="post-async"
-  class="article article-type-post" itemprop="blogPost">
-     
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/es6/2016/08/23/async/">异步操作和Async函数</a>
+      <a class="post-title-link" href="/es6/2016/08/23/iterator/">Iterator和for...of循环</a>
     </h3>
   
 
@@ -224,18 +149,284 @@
 
     <div class="post-content" id="post-content" itemprop="postContent" >
     
-         异步编程对JavaScript语言太重要。Javascript语言的执行环境是“单线程”的，如果没有异步编程，根本没法用，非卡死不可。 
- ES6诞生以前，异步编程的方法，大概有下面四种。 
+           Iterator（遍历器）的概念  JavaScript原有的表示“集合”的数据结构，主要是数组（Array）和对象（Object），ES6又添加了Map和Set。这样就有了四种数据集合，用户还可以组合使用它们，定义自己的数据结构，比如数组的成员是Map，Map的成员是对象。这样就需要一种统一的接口机制，来处理所有不同的数据结构。 
+ 遍历器（Iterator）就是这样一种机制。它是一种接口
+    
+        <a href="/es6/2016/08/23/iterator/" class="post-more waves-effect waves-button">
+            阅读全文...
+        </a>
+    </div>
+    
+</article>
+
+    </li>
+  
+    <li class="post-list-item">
+        <article id="post-let"
+  class="article article-type-post" itemprop="blogPost">
+     
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/es6/2016/08/23/let/">let和const命令</a>
+    </h3>
+  
+
+
+
+    <div class="post-meta">
+        <time datetime="2016-08-23T09:30:36.000Z" itemprop="datePublished" class="post-time">
+  2016-08-23
+</time>
+
+        
+
+
+    </div>
+
+    <div class="post-content" id="post-content" itemprop="postContent" >
+    
+           let命令    基本用法  ES6新增了 let 命令，用来声明变量。它的用法类似于 var ，但是所声明的变量，只在 let 命令所在的代码块内有效。 
+      1  2  3  4  5  6  7      &#123;     let  a =  10 ;     var  b =  1 ;  &#125;    a  // ReferenceError: a is not d
+    
+        <a href="/es6/2016/08/23/let/" class="post-more waves-effect waves-button">
+            阅读全文...
+        </a>
+    </div>
+    
+</article>
+
+    </li>
+  
+    <li class="post-list-item">
+        <article id="post-mixin"
+  class="article article-type-post" itemprop="blogPost">
+     
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/es6/2016/08/23/mixin/">Mixin</a>
+    </h3>
+  
+
+
+
+    <div class="post-meta">
+        <time datetime="2016-08-23T09:30:36.000Z" itemprop="datePublished" class="post-time">
+  2016-08-23
+</time>
+
+        
+
+
+    </div>
+
+    <div class="post-content" id="post-content" itemprop="postContent" >
+    
+         JavaScript语言的设计是单一继承，即子类只能继承一个父类，不允许继承多个父类。这种设计保证了对象继承的层次结构是树状的，而不是复杂的 网状结构 。 
+ 但是，这大大降低了编程的灵活性。因为实际开发中，有时不可避免，子类需要继承多个父类。举例来说，“猫”可以继承“哺乳类动物”，也可以继承“宠物”。 
+ 各种单一继承的编程语言，有不同的多重继承解决方案。比如，Java语言也是子类只能继承一个
+    
+        <a href="/es6/2016/08/23/mixin/" class="post-more waves-effect waves-button">
+            阅读全文...
+        </a>
+    </div>
+    
+</article>
+
+    </li>
+  
+    <li class="post-list-item">
+        <article id="post-arraybuffer"
+  class="article article-type-post" itemprop="blogPost">
+     
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/es6/2016/08/23/arraybuffer/">二进制数组</a>
+    </h3>
+  
+
+
+
+    <div class="post-meta">
+        <time datetime="2016-08-23T09:30:36.000Z" itemprop="datePublished" class="post-time">
+  2016-08-23
+</time>
+
+        
+
+
+    </div>
+
+    <div class="post-content" id="post-content" itemprop="postContent" >
+    
+         二进制数组（ArrayBuffer对象、TypedArray视图和DataView视图）是JavaScript操作二进制数据的一个接口。这些对象早就存在，属于独立的规格（2011年2月发布），ES6将它们纳入了ECMAScript规格，并且增加了新的方法。 
+ 这个接口的原始设计目的，与WebGL项目有关。所谓WebGL，就是指浏览器与显卡之间的通信接口，为了满足JavaScript与显卡之间大
+    
+        <a href="/es6/2016/08/23/arraybuffer/" class="post-more waves-effect waves-button">
+            阅读全文...
+        </a>
+    </div>
+    
+</article>
+
+    </li>
+  
+    <li class="post-list-item">
+        <article id="post-object"
+  class="article article-type-post" itemprop="blogPost">
+     
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/es6/2016/08/23/object/">对象的扩展</a>
+    </h3>
+  
+
+
+
+    <div class="post-meta">
+        <time datetime="2016-08-23T09:30:36.000Z" itemprop="datePublished" class="post-time">
+  2016-08-23
+</time>
+
+        
+
+
+    </div>
+
+    <div class="post-content" id="post-content" itemprop="postContent" >
+    
+           属性的简洁表示法  ES6允许直接写入变量和函数，作为对象的属性和方法。这样的书写更加简洁。 
+      1  2  3  4  5  6       var  foo =  'bar' ;   var  baz = &#123;foo&#125;;  baz  // &#123;foo: "bar"&#125;      // 等同于    var  baz = &#123;foo: f
+    
+        <a href="/es6/2016/08/23/object/" class="post-more waves-effect waves-button">
+            阅读全文...
+        </a>
+    </div>
+    
+</article>
+
+    </li>
+  
+    <li class="post-list-item">
+        <article id="post-promise"
+  class="article article-type-post" itemprop="blogPost">
+     
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/es6/2016/08/23/promise/">Promise对象</a>
+    </h3>
+  
+
+
+
+    <div class="post-meta">
+        <time datetime="2016-08-23T09:30:36.000Z" itemprop="datePublished" class="post-time">
+  2016-08-23
+</time>
+
+        
+
+
+    </div>
+
+    <div class="post-content" id="post-content" itemprop="postContent" >
+    
+           Promise的含义  Promise是异步编程的一种解决方案，比传统的解决方案——回调函数和事件——更合理和更强大。它由社区最早提出和实现，ES6将其写进了语言标准，统一了用法，原生提供了 Promise 对象。 
+ 所谓 Promise ，简单说就是一个容器，里面保存着某个未来才会结束的事件（通常是一个异步操作）的结果。从语法上说，Promise是一个对象，从它可以获取异步操作的消息。P
+    
+        <a href="/es6/2016/08/23/promise/" class="post-more waves-effect waves-button">
+            阅读全文...
+        </a>
+    </div>
+    
+</article>
+
+    </li>
+  
+    <li class="post-list-item">
+        <article id="post-regex"
+  class="article article-type-post" itemprop="blogPost">
+     
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/es6/2016/08/23/regex/">正则的扩展</a>
+    </h3>
+  
+
+
+
+    <div class="post-meta">
+        <time datetime="2016-08-23T09:30:36.000Z" itemprop="datePublished" class="post-time">
+  2016-08-23
+</time>
+
+        
+
+
+    </div>
+
+    <div class="post-content" id="post-content" itemprop="postContent" >
+    
+           RegExp构造函数  在ES5中，RegExp构造函数的参数有两种情况。 
+ 第一种情况是，参数是字符串，这时第二个参数表示正则表达式的修饰符（flag）。 
+      1  2  3       var  regex =  new   RegExp ( 'xyz' ,  'i' );   // 等价于    var  regex =  /xyz/i ;      
+ 第二种情况是，参数
+    
+        <a href="/es6/2016/08/23/regex/" class="post-more waves-effect waves-button">
+            阅读全文...
+        </a>
+    </div>
+    
+</article>
+
+    </li>
+  
+    <li class="post-list-item">
+        <article id="post-reference"
+  class="article article-type-post" itemprop="blogPost">
+     
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/es6/2016/08/23/reference/">参考链接</a>
+    </h3>
+  
+
+
+
+    <div class="post-meta">
+        <time datetime="2016-08-23T09:30:36.000Z" itemprop="datePublished" class="post-time">
+  2016-08-23
+</time>
+
+        
+
+
+    </div>
+
+    <div class="post-content" id="post-content" itemprop="postContent" >
+    
+           官方文件  
+  ECMAScript® 2015 Language Specification : ES6语言规格 
+  ECMAScript Current Proposals : ECMAScript当前的各种提案 
+  ECMAScript® 2016 Language Specification : ECMAScript 2016草案 
  
- 回调函数 
- 事件监听 
- 发布/订阅 
- Promise 对象 
- 
- ES6将JavaScript异步编程带入了一个全新的阶段，ES7的 Async 函数更是提出了异步编程的终极解决方案。 
-  
+   综合介绍  
+ Axel Raus
     
-        <a href="/es6/2016/08/23/async/" class="post-more waves-effect waves-button">
+        <a href="/es6/2016/08/23/reference/" class="post-more waves-effect waves-button">
             阅读全文...
         </a>
     </div>
@@ -245,14 +436,14 @@
     </li>
   
     <li class="post-list-item">
-        <article id="post-class"
+        <article id="post-proxy"
   class="article article-type-post" itemprop="blogPost">
      
 
 
   
     <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/es6/2016/08/23/class/">Class</a>
+      <a class="post-title-link" href="/es6/2016/08/23/proxy/">Proxy和Reflect</a>
     </h3>
   
 
@@ -270,10 +461,10 @@
 
     <div class="post-content" id="post-content" itemprop="postContent" >
     
-           Class基本语法    概述  JavaScript语言的传统方法是通过构造函数，定义并生成新对象。下面是一个例子。 
-      1  2  3  4  5  6  7  8  9  10        function   Point ( x, y )  &#123;     this .x = x;     this .y = y;  &#125;    Point.prototyp
+           Proxy概述  Proxy用于修改某些操作的默认行为，等同于在语言层面做出修改，所以属于一种“元编程”（meta programming），即对编程语言进行编程。 
+ Proxy可以理解成，在目标对象之前架设一层“拦截”，外界对该对象的访问，都必须先通过这层拦截，因此提供了一种机制，可以对外界的访问进行过滤和改写。Proxy这个词的原意是代理，用在这里表示由它来“代理”某些操作，可以译为“
     
-        <a href="/es6/2016/08/23/class/" class="post-more waves-effect waves-button">
+        <a href="/es6/2016/08/23/proxy/" class="post-more waves-effect waves-button">
             阅读全文...
         </a>
     </div>
@@ -283,14 +474,14 @@
     </li>
   
     <li class="post-list-item">
-        <article id="post-decorator"
+        <article id="post-set-map"
   class="article article-type-post" itemprop="blogPost">
      
 
 
   
     <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/es6/2016/08/23/decorator/">修饰器</a>
+      <a class="post-title-link" href="/es6/2016/08/23/set-map/">Set和Map数据结构</a>
     </h3>
   
 
@@ -308,207 +499,11 @@
 
     <div class="post-content" id="post-content" itemprop="postContent" >
     
-           类的修饰  修饰器（Decorator）是一个函数，用来修改类的行为。这是ES7的一个 提案 ，目前Babel转码器已经支持。 
- 修饰器对类的行为的改变，是代码编译时发生的，而不是在运行时。这意味着，修饰器能在编译阶段运行代码。 
-      1  2  3  4  5  6  7  8        function   testable ( target )  &#123;    ta
+           Set    基本用法  ES6提供了新的数据结构Set。它类似于数组，但是成员的值都是唯一的，没有重复的值。 
+ Set本身是一个构造函数，用来生成Set数据结构。 
+      1  2  3  4  5  6  7  8       var  s =  new   Set ();    [ 2 ,  3 ,  5 ,  4 ,  5 ,  2 ,  2 ].map(x =&gt; s.
     
-        <a href="/es6/2016/08/23/decorator/" class="post-more waves-effect waves-button">
-            阅读全文...
-        </a>
-    </div>
-    
-</article>
-
-    </li>
-  
-    <li class="post-list-item">
-        <article id="post-destructuring"
-  class="article article-type-post" itemprop="blogPost">
-     
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/es6/2016/08/23/destructuring/">变量的解构赋值</a>
-    </h3>
-  
-
-
-
-    <div class="post-meta">
-        <time datetime="2016-08-23T09:30:36.000Z" itemprop="datePublished" class="post-time">
-  2016-08-23
-</time>
-
-        
-
-
-    </div>
-
-    <div class="post-content" id="post-content" itemprop="postContent" >
-    
-           数组的解构赋值    基本用法  ES6允许按照一定模式，从数组和对象中提取值，对变量进行赋值，这被称为解构（Destructuring）。 
- 以前，为变量赋值，只能直接指定值。 
-      1  2  3       var  a =  1 ;   var  b =  2 ;   var  c =  3 ;      
- ES6允许写成下面这样。 
-      1       var 
-    
-        <a href="/es6/2016/08/23/destructuring/" class="post-more waves-effect waves-button">
-            阅读全文...
-        </a>
-    </div>
-    
-</article>
-
-    </li>
-  
-    <li class="post-list-item">
-        <article id="post-fp"
-  class="article article-type-post" itemprop="blogPost">
-     
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/es6/2016/08/23/fp/">函数式编程</a>
-    </h3>
-  
-
-
-
-    <div class="post-meta">
-        <time datetime="2016-08-23T09:30:36.000Z" itemprop="datePublished" class="post-time">
-  2016-08-23
-</time>
-
-        
-
-
-    </div>
-
-    <div class="post-content" id="post-content" itemprop="postContent" >
-    
-         JavaScript语言从一诞生，就具有函数式编程的烙印。它将函数作为一种独立的数据类型，与其他数据类型处于完全平等的地位。在JavaScript语言中，你可以采用面向对象编程，也可以采用函数式编程。有人甚至说，JavaScript是有史以来第一种被大规模采用的函数式编程语言。 
- ES6的种种新增功能，使得函数式编程变得更方便、更强大。本章介绍ES6如何进行函数式编程。 
-   函数合成  函
-    
-        <a href="/es6/2016/08/23/fp/" class="post-more waves-effect waves-button">
-            阅读全文...
-        </a>
-    </div>
-    
-</article>
-
-    </li>
-  
-    <li class="post-list-item">
-        <article id="post-function"
-  class="article article-type-post" itemprop="blogPost">
-     
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/es6/2016/08/23/function/">函数的扩展</a>
-    </h3>
-  
-
-
-
-    <div class="post-meta">
-        <time datetime="2016-08-23T09:30:36.000Z" itemprop="datePublished" class="post-time">
-  2016-08-23
-</time>
-
-        
-
-
-    </div>
-
-    <div class="post-content" id="post-content" itemprop="postContent" >
-    
-           函数参数的默认值    基本用法  在ES6之前，不能直接为函数的参数指定默认值，只能采用变通的方法。 
-      1  2  3  4  5  6  7  8        function   log ( x, y )  &#123;    y = y ||  'World' ;     console .log(x, y);  &#125;    log( 'Hello' )  //
-    
-        <a href="/es6/2016/08/23/function/" class="post-more waves-effect waves-button">
-            阅读全文...
-        </a>
-    </div>
-    
-</article>
-
-    </li>
-  
-    <li class="post-list-item">
-        <article id="post-generator"
-  class="article article-type-post" itemprop="blogPost">
-     
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/es6/2016/08/23/generator/">Generator 函数</a>
-    </h3>
-  
-
-
-
-    <div class="post-meta">
-        <time datetime="2016-08-23T09:30:36.000Z" itemprop="datePublished" class="post-time">
-  2016-08-23
-</time>
-
-        
-
-
-    </div>
-
-    <div class="post-content" id="post-content" itemprop="postContent" >
-    
-           简介    基本概念  Generator函数是ES6提供的一种异步编程解决方案，语法行为与传统函数完全不同。本章详细介绍Generator函数的语法和API，它的异步编程应用请看《异步操作》一章。 
- Generator函数有多种理解角度。从语法上，首先可以把它理解成，Generator函数是一个状态机，封装了多个内部状态。 
- 执行Generator函数会返回一个遍历器对象，也就是说，G
-    
-        <a href="/es6/2016/08/23/generator/" class="post-more waves-effect waves-button">
-            阅读全文...
-        </a>
-    </div>
-    
-</article>
-
-    </li>
-  
-    <li class="post-list-item">
-        <article id="post-array"
-  class="article article-type-post" itemprop="blogPost">
-     
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/es6/2016/08/23/array/">数组的扩展</a>
-    </h3>
-  
-
-
-
-    <div class="post-meta">
-        <time datetime="2016-08-23T09:30:36.000Z" itemprop="datePublished" class="post-time">
-  2016-08-23
-</time>
-
-        
-
-
-    </div>
-
-    <div class="post-content" id="post-content" itemprop="postContent" >
-    
-           Array.from()   Array.from 方法用于将两类对象转为真正的数组：类似数组的对象（array-like object）和可遍历（iterable）的对象（包括ES6新增的数据结构Set和Map）。 
- 下面是一个类似数组的对象， Array.from 将它转为真正的数组。 
-      1  2  3  4  5  6  7  8  9  10  11  12      
-    
-        <a href="/es6/2016/08/23/array/" class="post-more waves-effect waves-button">
+        <a href="/es6/2016/08/23/set-map/" class="post-more waves-effect waves-button">
             阅读全文...
         </a>
     </div>
@@ -521,7 +516,7 @@
 
 <nav id="page-nav">
     <div class="inner">
-    <span class="page-number current">1</span><a class="page-number" href="/es6/page/2/">2</a><a class="page-number" href="/es6/page/3/">3</a><a class="extend next" rel="next" href="/es6/page/2/">下一页</a>
+    <a class="extend prev" rel="prev" href="/es6/">上一页</a><a class="page-number" href="/es6/">1</a><span class="page-number current">2</span><a class="page-number" href="/es6/page/3/">3</a><a class="extend next" rel="next" href="/es6/page/3/">下一页</a>
     </div>
 </nav>
 
@@ -535,7 +530,7 @@ var BLOG_SHARE = {
     title: "Es6",
     pic: "/es6/img/logo.jpg",
     summary: document.getElementsByName('summary')[0].content,
-    url: "http://weex-tools.github.io/es6/index.html"
+    url: "http://weex-tools.github.io/es6/page/2/index.html"
 };
 </script>
 <div class="global-share" id="global-share">
