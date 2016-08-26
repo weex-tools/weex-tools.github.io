@@ -16,7 +16,7 @@
 ES6提出了两个新的声明变量的命令：let和const。其中，let完全可以取代var，因为两者语义">
 <meta property="og:type" content="article">
 <meta property="og:title" content="编程风格">
-<meta property="og:url" content="http://weex-tools.github.io/es6/2016/08/23/style/index.html">
+<meta property="og:url" content="http://weex-tools.github.io/2016/08/23/style/index.html">
 <meta property="og:site_name" content="Es6">
 <meta property="og:description" content="本章探讨如何将ES6的新语法，运用到编码实践之中，与传统的JavaScript语法结合在一起，写出合理的、易于阅读和维护的代码。
 多家公司和组织已经公开了它们的风格规范，具体可参阅jscs.info，下面的内容主要参考了Airbnb的JavaScript风格规范。
@@ -30,11 +30,11 @@ ES6提出了两个新的声明变量的命令：let和const。其中，let完全
 块级作用域（1）let取代var
 ES6提出了两个新的声明变量的命令：let和const。其中，let完全可以取代var，因为两者语义">
   
-    <link rel="alternative" href="/es6/atom.xml" title="Es6" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="Es6" type="application/atom+xml">
   
   <meta name="summary" content="null">
-  <link rel="shortcut icon" href="/es6/favicon.ico">
-  <link rel="stylesheet" href="/es6/css/style.css">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -47,7 +47,7 @@ ES6提出了两个新的声明变量的命令：let和const。其中，let完全
   </a>
   <div class="brand-wrap">
     <div class="brand">
-      <a href="/" class="avatar"><img src="/es6/img/logo.jpg"></a>
+      <a href="/" class="avatar"><img src="/img/logo.jpg"></a>
       <hgroup class="introduce">
         <h5 class="nickname">Yunlong</h5>
         <a href="mailto:384345134@qq.com" title="384345134@qq.com" class="mail">384345134@qq.com</a>
@@ -57,21 +57,21 @@ ES6提出了两个新的声明变量的命令：let和const。其中，let完全
   <ul class="nav flex-col">
     
         <li class="waves-block waves-effect">
-          <a href="/es6/"  >
+          <a href="/"  >
             <i class="icon icon-lg icon-home"></i>
             主页
           </a>
         </li>
     
         <li class="waves-block waves-effect">
-          <a href="/es6/archives"  >
+          <a href="/archives"  >
             <i class="icon icon-lg icon-archives"></i>
             归档
           </a>
         </li>
     
         <li class="waves-block waves-effect">
-          <a href="/es6/tags"  >
+          <a href="/tags"  >
             <i class="icon icon-lg icon-tags"></i>
             标签
           </a>
@@ -91,7 +91,7 @@ ES6提出了两个新的声明变量的命令：let和const。其中，let完全
   <p>Es6 &copy; 2016</p>
   <p>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme
   <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></p>
-  <a href="/es6/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-2x icon-rss-square"></i></a>
+  <a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-2x icon-rss-square"></i></a>
 </footer>
 
 </div>
@@ -254,7 +254,7 @@ ES6提出了两个新的声明变量的命令：let和const。其中，let完全
 <h2 id="模块"><a href="#模块" class="headerlink" title="模块"></a>模块</h2><p>首先，Module语法是JavaScript模块的标准写法，坚持使用这种写法。使用<code>import</code>取代<code>require</code>。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// bad</span></div><div class="line"><span class="keyword">const</span> moduleA = <span class="built_in">require</span>(<span class="string">'moduleA'</span>);</div><div class="line"><span class="keyword">const</span> func1 = moduleA.func1;</div><div class="line"><span class="keyword">const</span> func2 = moduleA.func2;</div><div class="line"></div><div class="line"><span class="comment">// good</span></div><div class="line"><span class="keyword">import</span> &#123; func1, func2 &#125; <span class="keyword">from</span> <span class="string">'moduleA'</span>;</div></pre></td></tr></table></figure>
 <p>使用<code>export</code>取代<code>module.exports</code>。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// commonJS的写法</span></div><div class="line"><span class="keyword">var</span> React = <span class="built_in">require</span>(<span class="string">'react'</span>);</div><div class="line"></div><div class="line"><span class="keyword">var</span> Breadcrumbs = React.createClass(&#123;</div><div class="line">  render() &#123;</div><div class="line">    <span class="keyword">return</span> &lt;nav /&gt;;</div><div class="line">  &#125;</div><div class="line">&#125;);</div><div class="line"></div><div class="line">module.exports = Breadcrumbs;</div><div class="line"></div><div class="line">// ES6的写法</div><div class="line">import React from 'react';</div><div class="line"></div><div class="line">const Breadcrumbs = React.createClass(&#123;</div><div class="line">  render() &#123;</div><div class="line">    return &lt;nav /&gt;;</div><div class="line">  &#125;</div><div class="line">&#125;);</div><div class="line"></div><div class="line">export default Breadcrumbs</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// commonJS的写法</span></div><div class="line"><span class="keyword">var</span> React = <span class="built_in">require</span>(<span class="string">'react'</span>);</div><div class="line"></div><div class="line"><span class="keyword">var</span> Breadcrumbs = React.createClass(&#123;</div><div class="line">  render() &#123;</div><div class="line">    <span class="keyword">return</span> <span class="xml"><span class="tag">&lt;<span class="name">nav</span> /&gt;</span>;</span></div><div class="line">  &#125;</div><div class="line">&#125;);</div><div class="line"></div><div class="line">module.exports = Breadcrumbs;</div><div class="line"></div><div class="line">// ES6的写法</div><div class="line">import React from 'react';</div><div class="line"></div><div class="line">const Breadcrumbs = React.createClass(&#123;</div><div class="line">  render() &#123;</div><div class="line">    return <span class="tag">&lt;<span class="name">nav</span> /&gt;</span>;</div><div class="line">  &#125;</div><div class="line">&#125;);</div><div class="line"></div><div class="line">export default Breadcrumbs</div></pre></td></tr></table></figure>
 <p>如果模块只有一个输出值，就使用<code>export default</code>，如果模块有多个输出值，就不使用<code>export default</code>，不要<code>export default</code>与普通的<code>export</code>同时使用。</p>
 <p>不要在模块输入中使用通配符。因为这样可以确保你的模块之中，有一个默认输出（export default）。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// bad</span></div><div class="line"><span class="keyword">import</span> * <span class="keyword">as</span> myObject <span class="string">'./importModule'</span>;</div><div class="line"></div><div class="line"><span class="comment">// good</span></div><div class="line"><span class="keyword">import</span> myObject <span class="keyword">from</span> <span class="string">'./importModule'</span>;</div></pre></td></tr></table></figure>
@@ -279,27 +279,27 @@ ES6提出了两个新的声明变量的命令：let和const。其中，let完全
             <blockquote>
                 <p>
                 本文地址：
-                <a href="http://weex-tools.github.io/es6/es6/2016/08/23/style/" target="_blank" rel="external">http://weex-tools.github.io/es6/es6/2016/08/23/style/</a>
+                <a href="http://weex-tools.github.io/2016/08/23/style/" target="_blank" rel="external">http://weex-tools.github.io/2016/08/23/style/</a>
                 </p>
-                <footer><cite><a href="http://weex-tools.github.io/es6">@Es6</a></cite></footer>
+                <footer><cite><a href="http://weex-tools.github.io">@Es6</a></cite></footer>
             </blockquote>
             </div>
             
 <nav class="post-nav">
   
     <div class="waves-block waves-effect prev fl">
-      <a href="/es6/2016/08/23/spec/" id="post-prev" class="post-nav-link">
+      <a href="/2016/08/23/set-map/" id="post-prev" class="post-nav-link">
         <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">读懂 ECMAScript 规格</h4>
+        <h4 class="title">Set和Map数据结构</h4>
       </a>
     </div>
   
 
   
     <div class="waves-block waves-effect next fr">
-      <a href="/es6/2016/08/23/module/" id="post-next" class="post-nav-link">
+      <a href="/2016/08/23/array/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">Module</h4>
+        <h4 class="title">数组的扩展</h4>
       </a>
     </div>
   
@@ -310,7 +310,7 @@ ES6提出了两个新的声明变量的命令：let和const。其中，let完全
             
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="style" data-title="编程风格" data-url="http://weex-tools.github.io/es6/2016/08/23/style/index.html"></div>
+	<div class="ds-thread" data-thread-key="style" data-title="编程风格" data-url="http://weex-tools.github.io/2016/08/23/style/index.html"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -342,9 +342,9 @@ ES6提出了两个新的声明变量的命令：let和const。其中，let完全
 <script>
 var BLOG_SHARE = {
     title: "编程风格",
-    pic: "/es6/img/logo.jpg",
+    pic: "/img/logo.jpg",
     summary: document.getElementsByName('summary')[0].content,
-    url: "http://weex-tools.github.io/es6/2016/08/23/style/index.html"
+    url: "http://weex-tools.github.io/2016/08/23/style/index.html"
 };
 </script>
 <div class="global-share" id="global-share">
@@ -387,7 +387,7 @@ var BLOG_SHARE = {
 
 <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
 
-<script src="/es6/js/main.js"></script>
+<script src="/js/main.js"></script>
 
 
 
@@ -408,7 +408,7 @@ var BLOG_SHARE = {
 </li>
 </script>
 
-<script src="/es6/js/search.js"></script>
+<script src="/js/search.js"></script>
 
 
 
